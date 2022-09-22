@@ -5,7 +5,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - C:\Users\andre\mongo-cache:/data/db
+      - ./mongo-cache:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
