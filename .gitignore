@@ -39,3 +39,5 @@ out/
 mongo-cache
 
 .env.dev
+
+.DS_Store
