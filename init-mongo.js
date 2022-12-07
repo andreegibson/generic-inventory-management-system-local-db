@@ -74,3 +74,36 @@ db.items.insertOne({
 // Types
 //////////////////////////////////////////////////////////
 db.createCollection("workOrders");
+//////////////////////////////////////////////////////////
+// Trucks
+//////////////////////////////////////////////////////////
+db.createCollection("trucks");
+db.trucks.insertOne({
+  number: "12345",
+  driver: "John Smith",
+  dateOccupied: "2022-11-07T19:36",
+  description: "This is a truck's description",
+  inventory: [
+    {
+      item: "Widget A",
+      category: "Plumbing",
+      type: "Component",
+      brand: "Acme",
+      quantity: 2
+    },
+    {
+      item: "Widget B",
+      category: "Plumbing",
+      type: "Component",
+      brand: "Acme",
+      quantity: 1
+    },
+    {
+      item: "Widget C",
+      category: "Plumbing",
+      type: "Component",
+      brand: "Acme",
+      quantity: 4
+    }
+  ]
+});
